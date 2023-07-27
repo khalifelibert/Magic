@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Magic.Views.WelcomPage"
+             xmlns:views="clr-namespace:Magic.Views"
+             Title="WelcomPage"
+             BackgroundColor="{StaticResource Jaune}">
+
+    <StackLayout
+        Spacing="0" Padding="0">
+
+        <views:EtView />
+        <HorizontalStackLayout 
+            BackgroundColor="Transparent"  
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="Center">
+
+            <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Spacing="10">
+
+
+                <Label 
+                    Text="Le Nombre "
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="50"/>
+                <Label 
+                    Text="Magique"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="50"/>
+                <Button
+                    x:Name="play"
+                    Text="Jouer"
+                    Clicked="BtGame"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+  
+        <BoxView 
+            Color="{StaticResource Jaune1}"
+            Margin="-20,0,-20,-35"
+            HeightRequest="120"
+            Rotation="-2"/> 
+
+    </StackLayout>
+
+
+</ContentPage>

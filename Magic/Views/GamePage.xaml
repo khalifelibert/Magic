@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Magic.Views.GamePage"
+             xmlns:views="clr-namespace:Magic.Views"
+             Title="Game"
+             BackgroundColor="{StaticResource Jaune}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        
+        
+        
+        <views:EtView Grid.Row="0" Grid.Column="0"/>
+        
+        
+        
+        
+        <HorizontalStackLayout
+                Grid.Row="1" Grid.Column="0"
+                    BackgroundColor="Transparent"  
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="Center">
+
+                <VerticalStackLayout
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Spacing="10">
+
+                    <Label
+                        Text="Devinez le nombre magiqur"
+                        HorizontalOptions="Center"
+                        FontSize="30"
+                        TextColor="{StaticResource Titre}"/>
+                    <Label
+                        x:Name="minGame"
+                        HorizontalOptions="Center"
+                        TextColor="{StaticResource Titre}"/>
+
+
+
+                    <Entry 
+                        Placeholder="?"
+                        PlaceholderColor="White"
+                        FontSize="40"
+                        x:Name="Enter"
+                        Keyboard="Numeric"
+                        HorizontalTextAlignment="Center"
+                        Text=""
+                        Focused="Fc"
+                        HeightRequest="100"
+                        Margin="30"/>
+                    <Button
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="Devine"
+                        Text="Devinez"/>
+
+
+
+                </VerticalStackLayout>
+ 
+            
+            </HorizontalStackLayout>
+
+        <BoxView 
+                Grid.Row="2" Grid.Column="0"
+                Color="{StaticResource Jaune1}"
+                Margin="-20,0,-20,-35"
+                HeightRequest="120"
+                Rotation="-2"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Magic.Views.EtView">
+    <StackLayout Spacing="0">
+        <AbsoluteLayout
+            Rotation="-10"
+            Margin="0,30,0,0">
+
+            <BoxView
+                AbsoluteLayout.LayoutBounds="-10,9,0.51,42"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Color="{StaticResource Jaune1}"/>
+            <Image
+                x:Name="st0"
+                AbsoluteLayout.LayoutBounds="0.5,0"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                HeightRequest="65"
+                Source="etx.png"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            Rotation="-10"
+            Margin="0,-22,0,0">
+
+            <BoxView
+                AbsoluteLayout.LayoutBounds="-10,8,0.61,42"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Color="{StaticResource Jaune1}"/>
+            <Image
+                x:Name="st1"
+                AbsoluteLayout.LayoutBounds="0.61,0"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                HeightRequest="65"
+                Source="etx.png"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            Rotation="-10"
+            Margin="0,-24,0,0">
+
+            <BoxView
+                AbsoluteLayout.LayoutBounds="-10,8,0.41,42"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Color="{StaticResource Jaune1}"/>
+            <Image
+                x:Name="st2"
+                AbsoluteLayout.LayoutBounds="0.40,0"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                HeightRequest="65"
+                Source="etx.png"/>
+        </AbsoluteLayout>
+
+
+    </StackLayout>
+</ContentView>
